@@ -1,0 +1,31 @@
+__pycache__/
+.pytest_cache/
+.venv/
+venv/
+
+# 本地账号与任务配置：里面有 sessionToken，只提交 *.example.json
+data/users.json
+data/tasks.json
+data/rotaoff.lock
+data/rotaoff.lock.info
+
+# 导出结果、图片
+output/
+
+# rotaeno 运行时的缓存存档
+rotaeno/saves/
+
+# 曲库与运行期缓存：内容来自 wiki，版权归原作者，不入库（避免二次分发）
+# 这些文件都能用 `library update` / 首次运行自动重建
+[sS]onglist.json
+data/song_data.db
+data/song_data.db.tmp
+data/player_data.db
+data/saves/
+data/temp/
+
+# 存档里对不上本地曲库的记录：由查询自动重建，且反映某个账号的存档内容
+data/library_gaps.json
+
+# 专门喂给 AI 的 wiki 内容，同样因为版权不入库
+wiki/
